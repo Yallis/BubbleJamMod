@@ -6879,6 +6879,30 @@ PrefabInstance:
       value: Use o mouse para mover o ventilador e evitar que a(s) bolha(s) caia(m)
         nos espinhos
       objectReference: {fileID: 0}
+    - target: {fileID: 1425048392690335412, guid: d914b3da22dff69469127fba3c655787, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1425048392690335412, guid: d914b3da22dff69469127fba3c655787, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1425048392690335412, guid: d914b3da22dff69469127fba3c655787, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 3225647105630268929, guid: d914b3da22dff69469127fba3c655787, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3225647105630268929, guid: d914b3da22dff69469127fba3c655787, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 488288664, guid: 556e6a1ab54418e4b8027dfedc877258, type: 3}
+    - target: {fileID: 3225647105630268929, guid: d914b3da22dff69469127fba3c655787, type: 3}
+      propertyPath: m_PreserveAspect
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5981528089331283957, guid: d914b3da22dff69469127fba3c655787, type: 3}
       propertyPath: m_Name
       value: Disclaimer
@@ -10157,6 +10181,26 @@ PrefabInstance:
       propertyPath: m_fontColor32.rgba
       value: 4278255615
       objectReference: {fileID: 0}
+    - target: {fileID: 8343882780650440223, guid: 1658c8affc9673b44b8fbdb95a054144, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8343882780650440223, guid: 1658c8affc9673b44b8fbdb95a054144, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 488288664, guid: 556e6a1ab54418e4b8027dfedc877258, type: 3}
+    - target: {fileID: 8343882780650440223, guid: 1658c8affc9673b44b8fbdb95a054144, type: 3}
+      propertyPath: m_PreserveAspect
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9111627711237149258, guid: 1658c8affc9673b44b8fbdb95a054144, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 145
+      objectReference: {fileID: 0}
+    - target: {fileID: 9111627711237149258, guid: 1658c8affc9673b44b8fbdb95a054144, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 100
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12031,6 +12075,18 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 6694025258373844631, guid: 2a39440380179e545b18dec01e511e7b, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6694025258373844631, guid: 2a39440380179e545b18dec01e511e7b, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 488288664, guid: 556e6a1ab54418e4b8027dfedc877258, type: 3}
+    - target: {fileID: 6694025258373844631, guid: 2a39440380179e545b18dec01e511e7b, type: 3}
+      propertyPath: m_PreserveAspect
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6816682882117895437, guid: 2a39440380179e545b18dec01e511e7b, type: 3}
       propertyPath: m_Name
       value: LoseScreen
@@ -12038,6 +12094,14 @@ PrefabInstance:
     - target: {fileID: 6816682882117895437, guid: 2a39440380179e545b18dec01e511e7b, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9096919933582194453, guid: 2a39440380179e545b18dec01e511e7b, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 145
+      objectReference: {fileID: 0}
+    - target: {fileID: 9096919933582194453, guid: 2a39440380179e545b18dec01e511e7b, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 100
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15177,6 +15241,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PauseScreen
       objectReference: {fileID: 0}
+    - target: {fileID: 1242353176733580118, guid: b3a8e5ed359dbc84d86f6429c041e58d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1968070065347712414, guid: b3a8e5ed359dbc84d86f6429c041e58d, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -15257,10 +15325,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3475160576582575595, guid: b3a8e5ed359dbc84d86f6429c041e58d, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 145
+      objectReference: {fileID: 0}
+    - target: {fileID: 3475160576582575595, guid: b3a8e5ed359dbc84d86f6429c041e58d, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 3733912258881394565, guid: b3a8e5ed359dbc84d86f6429c041e58d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 2055286010}
+    - target: {fileID: 5835535650790719752, guid: b3a8e5ed359dbc84d86f6429c041e58d, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5835535650790719752, guid: b3a8e5ed359dbc84d86f6429c041e58d, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 488288664, guid: 556e6a1ab54418e4b8027dfedc877258, type: 3}
+    - target: {fileID: 5835535650790719752, guid: b3a8e5ed359dbc84d86f6429c041e58d, type: 3}
+      propertyPath: m_PreserveAspect
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

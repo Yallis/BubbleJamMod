@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 442167110822644975}
   - component: {fileID: 542898986159832552}
   - component: {fileID: 8353960563230119672}
+  - component: {fileID: 1219750182457469604}
   m_Layer: 0
   m_Name: mgBubble
   m_TagString: Bolha
@@ -76,7 +77,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 5
-  m_Sprite: {fileID: 1203847248, guid: a6a870979661a664daaa963dc0618c46, type: 3}
+  m_Sprite: {fileID: -124038834, guid: a6a870979661a664daaa963dc0618c46, type: 3}
   m_Color: {r: 0.9009434, g: 0.9978924, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -113,7 +114,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 5
+  m_Constraints: 4
 --- !u!58 &542898986159832552
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -148,7 +149,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 2
+  m_Radius: 1
 --- !u!114 &8353960563230119672
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -161,3 +162,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8693c96badacf5947aedb222fc3c4ec4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &1219750182457469604
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1400551205076397265}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 603fef13742c27648a77c96fdd13450d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

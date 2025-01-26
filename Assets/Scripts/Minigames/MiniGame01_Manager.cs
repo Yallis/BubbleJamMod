@@ -72,13 +72,14 @@ public class MiniGame01_Manager : MonoBehaviour {
         if (col.gameObject.CompareTag("Bolha")) {
             Vector2 newDirection = col.transform.position - transform.position;
             newDirection = newDirection.normalized;
-            newDirection = new Vector2(newDirection.x/1.25f, newDirection.y);
+            newDirection = new Vector2(newDirection.x*2f, newDirection.y);
 
             Rigidbody2D rbBubble = col.GetComponent<Rigidbody2D>();
             rbBubble.AddForce(newDirection * bForca);
             countTouch++;
         }
-        if(countTouch > 4) {
+
+        if(countTouch >= 4) {
             Win();
         }
     }

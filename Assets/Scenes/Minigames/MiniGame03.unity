@@ -127,6 +127,27 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1400551205076397265, guid: cda4c00ec0cdd89468da1c6aa5868a6c, type: 3}
   m_PrefabInstance: {fileID: 983396596}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &64758947
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 64758946}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 603fef13742c27648a77c96fdd13450d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &298166018
 GameObject:
   m_ObjectHideFlags: 0
@@ -368,6 +389,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 442167110822644975, guid: cda4c00ec0cdd89468da1c6aa5868a6c, type: 3}
+      propertyPath: m_Constraints
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 542898986159832552, guid: cda4c00ec0cdd89468da1c6aa5868a6c, type: 3}
+      propertyPath: m_Radius
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1400551205076397265, guid: cda4c00ec0cdd89468da1c6aa5868a6c, type: 3}
       propertyPath: m_Name
       value: Bubble
@@ -412,10 +441,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4875404586061898339, guid: cda4c00ec0cdd89468da1c6aa5868a6c, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1203847248, guid: a6a870979661a664daaa963dc0618c46, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1400551205076397265, guid: cda4c00ec0cdd89468da1c6aa5868a6c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 64758947}
   m_SourcePrefab: {fileID: 100100000, guid: cda4c00ec0cdd89468da1c6aa5868a6c, type: 3}
 --- !u!1 &1018680821
 GameObject:
@@ -428,7 +464,7 @@ GameObject:
   - component: {fileID: 1018680823}
   - component: {fileID: 1018680822}
   m_Layer: 0
-  m_Name: CavernaBG
+  m_Name: bgImg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -475,7 +511,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c7cf631befe22dd43aeb6dd362fe3ef1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1f23201dc726b964cb2dc3713752114d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -512,6 +548,10 @@ PrefabInstance:
     - target: {fileID: 1242353176733580118, guid: b3a8e5ed359dbc84d86f6429c041e58d, type: 3}
       propertyPath: m_Name
       value: PauseScreen
+      objectReference: {fileID: 0}
+    - target: {fileID: 1242353176733580118, guid: b3a8e5ed359dbc84d86f6429c041e58d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1968070065347712414, guid: b3a8e5ed359dbc84d86f6429c041e58d, type: 3}
       propertyPath: m_Pivot.x
@@ -593,6 +633,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3475160576582575595, guid: b3a8e5ed359dbc84d86f6429c041e58d, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 145
+      objectReference: {fileID: 0}
+    - target: {fileID: 3475160576582575595, guid: b3a8e5ed359dbc84d86f6429c041e58d, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 3733912258881394565, guid: b3a8e5ed359dbc84d86f6429c041e58d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -600,6 +648,18 @@ PrefabInstance:
     - target: {fileID: 3733912258881394565, guid: b3a8e5ed359dbc84d86f6429c041e58d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Play
+      objectReference: {fileID: 0}
+    - target: {fileID: 5835535650790719752, guid: b3a8e5ed359dbc84d86f6429c041e58d, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5835535650790719752, guid: b3a8e5ed359dbc84d86f6429c041e58d, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 488288664, guid: 556e6a1ab54418e4b8027dfedc877258, type: 3}
+    - target: {fileID: 5835535650790719752, guid: b3a8e5ed359dbc84d86f6429c041e58d, type: 3}
+      propertyPath: m_PreserveAspect
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -878,9 +938,33 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 6694025258373844631, guid: 2a39440380179e545b18dec01e511e7b, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6694025258373844631, guid: 2a39440380179e545b18dec01e511e7b, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 488288664, guid: 556e6a1ab54418e4b8027dfedc877258, type: 3}
+    - target: {fileID: 6694025258373844631, guid: 2a39440380179e545b18dec01e511e7b, type: 3}
+      propertyPath: m_PreserveAspect
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6816682882117895437, guid: 2a39440380179e545b18dec01e511e7b, type: 3}
       propertyPath: m_Name
       value: LoseScreen
+      objectReference: {fileID: 0}
+    - target: {fileID: 6816682882117895437, guid: 2a39440380179e545b18dec01e511e7b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9096919933582194453, guid: 2a39440380179e545b18dec01e511e7b, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 145
+      objectReference: {fileID: 0}
+    - target: {fileID: 9096919933582194453, guid: 2a39440380179e545b18dec01e511e7b, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 100
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -949,6 +1033,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WinScreen
       objectReference: {fileID: 0}
+    - target: {fileID: 3751540527205329569, guid: 1658c8affc9673b44b8fbdb95a054144, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6832312860485256475, guid: 1658c8affc9673b44b8fbdb95a054144, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -981,6 +1069,30 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 8343882780650440223, guid: 1658c8affc9673b44b8fbdb95a054144, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8343882780650440223, guid: 1658c8affc9673b44b8fbdb95a054144, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 488288664, guid: 556e6a1ab54418e4b8027dfedc877258, type: 3}
+    - target: {fileID: 8343882780650440223, guid: 1658c8affc9673b44b8fbdb95a054144, type: 3}
+      propertyPath: m_PreserveAspect
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8353140845901445064, guid: 1658c8affc9673b44b8fbdb95a054144, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9111627711237149258, guid: 1658c8affc9673b44b8fbdb95a054144, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 145
+      objectReference: {fileID: 0}
+    - target: {fileID: 9111627711237149258, guid: 1658c8affc9673b44b8fbdb95a054144, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 100
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1007,6 +1119,30 @@ PrefabInstance:
     - target: {fileID: 309943537601437252, guid: d914b3da22dff69469127fba3c655787, type: 3}
       propertyPath: m_text
       value: Clique para mover a bolha para cima e evite os espinhos
+      objectReference: {fileID: 0}
+    - target: {fileID: 1425048392690335412, guid: d914b3da22dff69469127fba3c655787, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1425048392690335412, guid: d914b3da22dff69469127fba3c655787, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1425048392690335412, guid: d914b3da22dff69469127fba3c655787, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -85
+      objectReference: {fileID: 0}
+    - target: {fileID: 3225647105630268929, guid: d914b3da22dff69469127fba3c655787, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3225647105630268929, guid: d914b3da22dff69469127fba3c655787, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 488288664, guid: 556e6a1ab54418e4b8027dfedc877258, type: 3}
+    - target: {fileID: 3225647105630268929, guid: d914b3da22dff69469127fba3c655787, type: 3}
+      propertyPath: m_PreserveAspect
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5981528089331283957, guid: d914b3da22dff69469127fba3c655787, type: 3}
       propertyPath: m_Name

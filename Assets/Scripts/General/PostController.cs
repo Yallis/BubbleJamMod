@@ -9,6 +9,10 @@ public class PostController : MonoBehaviour
     public TextMeshProUGUI button2;
     public TMP_Text displayText;
 
+    public Sprite[] optSprites;
+    public Image opt1Icon;
+    public Image opt2Icon;
+
     int categoria1 = 0, categoria2 = 0;
     private float[,] matriz = new float[,]
        {
@@ -99,6 +103,8 @@ public class PostController : MonoBehaviour
         button1.text = acao1;
         button2.text = acao2;
 
+        opt1Icon.sprite = optSprites[categoria1];
+        opt2Icon.sprite = optSprites[categoria2];
     }
 
     public void getCategoryOne()

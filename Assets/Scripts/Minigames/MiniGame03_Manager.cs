@@ -22,7 +22,7 @@ public class MiniGame03_Manager : MonoBehaviour {
     float currentTime;
     ArrayList espetosList;
 
-    public TextMeshProUGUI disclaimerText;
+    //public TextMeshProUGUI disclaimerText;
 
     private ManagerMinigames manager;
 
@@ -49,7 +49,7 @@ public class MiniGame03_Manager : MonoBehaviour {
                 break;
         }
 
-        disclaimerText.text = "Clique com o mouse para mover a bolha para cima e evite " + count + " espinhos para ganhar!";
+        //disclaimerText.text = "Clique com o mouse para mover a bolha para cima e evite " + count + " espinhos para ganhar!";
     }
 
     private void Start() {
@@ -65,9 +65,9 @@ public class MiniGame03_Manager : MonoBehaviour {
             if (count > 0) {
                 //Condicional de tempo
                 if (currentTime <= 0f) {
+                    float y = Random.Range(-1.5f, 1.5f);
+                    Vector3 spawnTransform = new Vector3(espetosSpawn.transform.position.x, y, 0);
                     //Spawn os espetos
-                    var y = Random.Range(-2, 2);
-                    var spawnTransform = new Vector3(espetosSpawn.transform.position.x, y, 0);
                     espetosList.Add(Instantiate(espetos, spawnTransform, Quaternion.identity) as GameObject);
                     currentTime = timeSpawn;
                     count--;

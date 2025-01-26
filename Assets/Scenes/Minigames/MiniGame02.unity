@@ -201,7 +201,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: 3cfc1f97c7998dd48b45666414d4367a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -243,7 +243,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &477437981
 Transform:
   m_ObjectHideFlags: 0
@@ -5197,8 +5197,8 @@ GameObject:
   - component: {fileID: 566774302}
   - component: {fileID: 566774305}
   - component: {fileID: 566774304}
-  - component: {fileID: 566774306}
   - component: {fileID: 566774307}
+  - component: {fileID: 566774306}
   m_Layer: 5
   m_Name: Target
   m_TagString: Untagged
@@ -5215,14 +5215,14 @@ RectTransform:
   m_GameObject: {fileID: 566774301}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 2, z: 1}
+  m_LocalScale: {x: 0.65, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1369414331}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -300, y: -149.99998}
+  m_AnchoredPosition: {x: -325, y: -149.99998}
   m_SizeDelta: {x: 75, y: 25}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &566774304
@@ -5245,7 +5245,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -2046181691, guid: 0e7a5c8080d2a36409e41c84a9ea3965, type: 3}
+  m_Sprite: {fileID: 1886941712, guid: a6a870979661a664daaa963dc0618c46, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5306,7 +5306,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 43, y: 10}
+  m_Size: {x: 70, y: 23}
   m_EdgeRadius: 0
 --- !u!50 &566774307
 Rigidbody2D:
@@ -5583,8 +5583,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
-  m_Sprite: {fileID: 615462113, guid: 3599b6ea11b6dd6498de7d03c6aa5886, type: 3}
+  m_SortingOrder: 4
+  m_Sprite: {fileID: 21300000, guid: 9ce2698f60b8f4f48bc8f39b8a09b4ef, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -5605,7 +5605,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.05, y: -0.47, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.75, y: 0.75, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -5620,7 +5620,8 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 309943537601437252, guid: d914b3da22dff69469127fba3c655787, type: 3}
       propertyPath: m_text
-      value: "Clique quando a barra alcan\xE7ar a zona verde para expandir sua bolha"
+      value: "Clique quando o sabonete alcan\xE7ar a zona escura para expandir sua
+        bolha"
       objectReference: {fileID: 0}
     - target: {fileID: 5981528089331283957, guid: d914b3da22dff69469127fba3c655787, type: 3}
       propertyPath: m_Name
@@ -5758,7 +5759,7 @@ RectTransform:
   m_GameObject: {fileID: 1214263810}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 2, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1369414331}
@@ -5788,7 +5789,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 516974695, guid: 0e7a5c8080d2a36409e41c84a9ea3965, type: 3}
+  m_Sprite: {fileID: -1899720759, guid: a6a870979661a664daaa963dc0618c46, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6047,7 +6048,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4550505304210519025, guid: 2a39440380179e545b18dec01e511e7b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4550505304210519025, guid: 2a39440380179e545b18dec01e511e7b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -6059,7 +6060,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4550505304210519025, guid: 2a39440380179e545b18dec01e511e7b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ChangeScene
+      value: LoseContinue
       objectReference: {fileID: 0}
     - target: {fileID: 4550505304210519025, guid: 2a39440380179e545b18dec01e511e7b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
@@ -6180,7 +6181,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6832312860485256475, guid: 1658c8affc9673b44b8fbdb95a054144, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6832312860485256475, guid: 1658c8affc9673b44b8fbdb95a054144, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -6192,7 +6193,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6832312860485256475, guid: 1658c8affc9673b44b8fbdb95a054144, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ChangeScene
+      value: WinContinue
       objectReference: {fileID: 0}
     - target: {fileID: 6832312860485256475, guid: 1658c8affc9673b44b8fbdb95a054144, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
@@ -6577,8 +6578,8 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 3
-      minScalar: 1
+      scalar: 1
+      minScalar: 0.25
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -7951,7 +7952,7 @@ ParticleSystem:
     uvChannelMask: -1
     rowMode: 1
     sprites:
-    - sprite: {fileID: 21300000, guid: b60a94b41275d79498c3bdd57cc1147c, type: 3}
+    - sprite: {fileID: -124038834, guid: a6a870979661a664daaa963dc0618c46, type: 3}
     flipU: 0
     flipV: 0
   VelocityModule:
@@ -11298,8 +11299,8 @@ Transform:
   m_GameObject: {fileID: 1766847893}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.308, y: 0.1836, z: 0}
-  m_LocalScale: {x: 1.0729386, y: 1.0729386, z: 1.0729386}
+  m_LocalPosition: {x: 0, y: 0.25, z: 0}
+  m_LocalScale: {x: 1, y: 1.1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -11367,8 +11368,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: b60a94b41275d79498c3bdd57cc1147c, type: 3}
-  m_Color: {r: 0.8726415, g: 0.996099, b: 1, a: 0.6}
+  m_Sprite: {fileID: -124038834, guid: a6a870979661a664daaa963dc0618c46, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.6}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -11429,7 +11430,7 @@ RectTransform:
   m_GameObject: {fileID: 2020050680}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.75, y: 0.65, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 502586103}
@@ -11460,7 +11461,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -1471263558, guid: 0e7a5c8080d2a36409e41c84a9ea3965, type: 3}
+  m_Sprite: {fileID: 208394994, guid: a6a870979661a664daaa963dc0618c46, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -11541,7 +11542,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 28, y: 20}
+  m_Size: {x: 36, y: 34}
   m_EdgeRadius: 0
 --- !u!50 &2020050687
 Rigidbody2D:
@@ -11594,8 +11595,8 @@ SceneRoots:
   - {fileID: 619394802}
   - {fileID: 1309224628}
   - {fileID: 1369414331}
-  - {fileID: 1823103105}
   - {fileID: 477437981}
   - {fileID: 1766847895}
   - {fileID: 1200053381}
+  - {fileID: 1823103105}
   - {fileID: 107848934}

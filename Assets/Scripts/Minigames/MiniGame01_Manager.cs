@@ -20,6 +20,7 @@ public class MiniGame01_Manager : MonoBehaviour {
     public int countTouch = 0;
 
     private void Awake() {
+        bubblesList = new ArrayList();
 
         switch (Dificuldade) {
             case levels.Level_1:
@@ -56,7 +57,6 @@ public class MiniGame01_Manager : MonoBehaviour {
 
     private void Start() {
         manager = this.gameObject.GetComponent<ManagerMinigames>();
-        bubblesList = new ArrayList();
     }
 
     void Update() {
@@ -72,29 +72,29 @@ public class MiniGame01_Manager : MonoBehaviour {
         if (col.gameObject.CompareTag("Bolha")) {
             Vector2 newDirection = col.transform.position - transform.position;
             newDirection = newDirection.normalized;
-            newDirection = new Vector2(newDirection.x/2, newDirection.y);
+            newDirection = new Vector2(newDirection.x/1.25f, newDirection.y);
 
             Rigidbody2D rbBubble = col.GetComponent<Rigidbody2D>();
             rbBubble.AddForce(newDirection * bForca);
             countTouch++;
         }
-        if(countTouch > 4)
-        {
-            manager.Win();
+        if(countTouch > 4) {
+            Win();
         }
     }
 
+    //Função que spawna as bolhas
     void SpawnBubble(Transform posT, float gS) {
         GameObject _bubble = Instantiate(bubble, posT) as GameObject;
         _bubble.GetComponent<Rigidbody2D>().gravityScale = gS;
-        //bubblesList.Add(_bubble);
+        bubblesList.Add(_bubble);
     }
 
     void Win() {
         Debug.Log("Venceu!");
-        //foreach (GameObject b in bubblesList) {
-        //    b.SetActive(false);
-        //}
+        foreach (GameObject b in bubblesList) {
+            b.SetActive(false);
+        }
         manager.Win();
     }
 }

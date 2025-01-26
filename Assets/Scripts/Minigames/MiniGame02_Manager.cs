@@ -85,7 +85,7 @@ public class MiniGame02_Manager : MonoBehaviour {
                 }
             }
 
-            if (newScale.x > 15) {
+            if (newScale.x > 9) {
                 Win();
             }
             else if ((newScale.x < 3 & loseFlag) || newScale.x < 0.5f) {
@@ -128,8 +128,7 @@ public class MiniGame02_Manager : MonoBehaviour {
         manager.Lose();
     }
 
-    private void BubbleSpawn()
-    {
+    private void BubbleSpawn() {
         explosion.SetActive(true);
         explosionParticle.Play();
     }
